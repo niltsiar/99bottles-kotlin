@@ -11,12 +11,6 @@ class BeerSong {
                     0 -> "No more bottles of beer on the wall, no more bottles of beer.\nGo to the store and buy some more, 99 bottles of beer on the wall.\n"
                     else -> throw IllegalArgumentException()
                 }
-            }.reduce { acc, s -> acc + s }
+            }.reduce { acc, s -> acc + "\n" + s }
     }
-}
-
-fun Int.toBottles() = when (this) {
-    in 99 downTo 2 -> "$this bottles"
-    1 -> "1 bottle"
-    else -> throw IllegalArgumentException()
 }

@@ -11,7 +11,6 @@ class BeerSongTest {
         assertEquals(expected, BeerSong.verses(99, 99))
     }
 
-    @Ignore
     @Test
     fun lastGenericVerse() {
         val expected =
@@ -19,7 +18,6 @@ class BeerSongTest {
         assertEquals(expected, BeerSong.verses(3, 3))
     }
 
-    @Ignore
     @Test
     fun verse2() {
         val expected =
@@ -27,7 +25,6 @@ class BeerSongTest {
         assertEquals(expected, BeerSong.verses(2, 2))
     }
 
-    @Ignore
     @Test
     fun verse1() {
         val expected =
@@ -35,7 +32,6 @@ class BeerSongTest {
         assertEquals(expected, BeerSong.verses(1, 1))
     }
 
-    @Ignore
     @Test
     fun verse0() {
         val expected =
@@ -43,7 +39,6 @@ class BeerSongTest {
         assertEquals(expected, BeerSong.verses(0, 0))
     }
 
-    @Ignore
     @Test
     fun firstTwoVerses() {
         val expected =

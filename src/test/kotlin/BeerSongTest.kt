@@ -1,4 +1,3 @@
-import org.junit.Ignore
 import org.junit.Test
 import kotlin.test.assertEquals
 
@@ -46,7 +45,6 @@ class BeerSongTest {
         assertEquals(expected, BeerSong.verses(99, 98))
     }
 
-    @Ignore
     @Test
     fun lastThreeVerses() {
         val expected =
@@ -54,7 +52,6 @@ class BeerSongTest {
         assertEquals(expected, BeerSong.verses(2, 0))
     }
 
-    @Ignore
     @Test
     fun allVerses() {
         val expected =

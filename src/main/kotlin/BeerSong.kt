@@ -27,7 +27,7 @@ class BeerSong {
         fun verses(from: Int, to: Int): String {
             return (from downTo to).map {
                 "${it.toFirstVerseFirstPart()} ${it.toFirstVerseSecondPart()}\n${it.toSecondVerseFirstPart()} ${it.toSecondVerseSecondPart()}\n"
-            }.reduce { acc, s -> acc + s }
+            }.reduce { acc, s -> acc + "\n" + s }
         }
     }
 }
